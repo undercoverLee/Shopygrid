@@ -8,10 +8,33 @@ html {
   box-sizing: border-box;
 }
 
-.container {
-    //Mos u lodh. Mos u be nervoz. Gjithcka do te rregullohet.
-    //Normalisht pasi qe e shton kodin !!!!
+.blue {
+  background-color: blue;
+  padding: 20px;
 }
+.red {
+  background-color: red;
+  padding: 20px;
+}
+
+.container {
+
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 80px  repeat(2, 1fr) 2fr;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-gap:20px;
+    
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 992px) {
   .container {
