@@ -62,12 +62,112 @@
   grid-column: 4;
 }
 
+.horizontal-1 {
+  background-color: #eceef0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.horizontal-1 h2 {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-1 p {
+  padding: 0;
+  margin-top: 5px;
+}
+
+.horizontal-1 img {
+  width: 100px;
+  height: 100px;
+}
+
+.horizontal-2 {
+  background-color: #afe9f2;
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.horizontal-2 h2 {
+  width: 40%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.vertical-1 {
+  background-image: url("../images/vertical-1.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.vertical-1 p {
+  background-color: #eceef0;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.vertical-2 {
+  background-image: url("../images/vertical-2.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.vertical-2 p {
+  background-color: #eceef0;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
 .product-new {
   -ms-grid-row: 4;
   grid-row: 4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.new {
+  border-radius: 10px;
+}
+
+.new img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.new p {
+  font-weight: bold;
+}
+
+.new .new-price {
+  font-weight: bolder;
 }
 
 html {
@@ -75,14 +175,13 @@ html {
           box-sizing: border-box;
 }
 
-.blue {
-  background-color: blue;
-  padding: 20px;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.red {
-  background-color: red;
-  padding: 20px;
+.blue {
+  background-color: blue;
+  padding: 5px;
 }
 
 .container {
@@ -95,6 +194,11 @@ html {
   -ms-grid-columns: 200px (1fr)[4];
       grid-template-columns: 200px repeat(4, 1fr);
   grid-gap: 20px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 992px) {
