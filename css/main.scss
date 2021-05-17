@@ -10,10 +10,11 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #faf9fe;
 }
 
 .blue {
-  background-color: blue;
+  background-color: white;
   padding: 5px;
 }
 // .red { 
@@ -29,7 +30,7 @@ body {
     display: grid;
     grid-template-rows: 80px  repeat(2, 1fr) 2fr;
     grid-template-columns: 200px repeat(4, 1fr);
-    grid-gap:20px;
+    grid-gap:10px;
     
 }
 

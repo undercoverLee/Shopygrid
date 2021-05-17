@@ -1,5 +1,45 @@
 .header {
     grid-row: 1;
     grid-column: 2/6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    input {
+        width: 300px;
+        height: 30px;
+        border-radius: 5px;
+        border:none;
+        background-color: #faf9fe;
+        box-shadow: 2px 2px 5px gainsboro ;
+
+    }
+
+    button{
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 2px 2px 5px gainsboro ;
+
+    }
+    .women {
+        background: #f7d3d4;
+    }
+    .men {
+        background: #faf9fe;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+       
+
+    }
 }
+
+
  
+
